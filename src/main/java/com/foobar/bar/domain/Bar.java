@@ -13,12 +13,10 @@ import javax.persistence.Table;
 public class Bar {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="bar_id_seq")
-  @SequenceGenerator(name="bar_id_seq", sequenceName="bar_id_seq", allocationSize=1)
-  @Column(name = "ID")
+  @Column(name = "id")
   private Long id;
 
-  @Column(name = "BAR")
+  @Column(name = "bar")
   private String bar;
 
   Bar(String bar) {
